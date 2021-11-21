@@ -1,0 +1,81 @@
+
+@import "../../sass/abstracts/variables";
+#navbar-desk{
+    width: 100%;
+    height: 50px;
+    background-color: $cdl_white;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+    align-items: center;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 5fr 1fr 1fr 5fr;
+    
+
+
+#InicioNav{
+    background-color: $cdl_white;
+    text-align: center;
+    width: 100px ;
+    grid-column:2/3;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family:'Montserrat';
+    font-weight: bold;
+    
+    
+}
+#FaqNav{
+    background-color: $cdl_white;
+    text-align: center;
+    width: 100px ;
+    grid-column:3/4;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-family:'Montserrat';
+}
+}
+
+#navbar-mobile{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    background-color: $cdl_white;
+    display: none;
+    
+}
+
+#InicioNavMobile{
+    grid-column: 1/3;
+    padding-right: 40px;
+    
+    img{
+        float: right;
+        width: 50px;
+    }
+}
+
+#FaqNavMobile{
+    grid-column: 3/5;
+    padding-left: 40px;
+    img{
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width:500px) {
+    #navbar-mobile{
+        display: grid;
+        overflow: hidden;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        z-index:1000 ;
+    }
+    #navbar-desk{
+        display: none;
+    }
+}
