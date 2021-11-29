@@ -10,18 +10,21 @@
                          "i c" 
     ;
     text-align: justify;
+    
 }
 .home-titulo{
     grid-area: t;
+    
     h1{
         font-family: 'Montserrat', sans-serif;
+        margin-top: 20px;
     }
     
 }
 
 #home-text{
     p{
-        font-family: 'Roboto Mono', monospace;
+        font-family: 'Roboto', sans-serif;
         text-align: justify;
         text-justify: inter-word;
         
